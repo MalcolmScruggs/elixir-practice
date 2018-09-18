@@ -17,9 +17,7 @@ defmodule Practice do
   end
 
   def factor(x) do
-    # Maybe delegate this too.
-    #TODO write factor function
-    [1,2,x]
+    Practice.Factor.factor(x)
   end
 
   def palindrome(str) do

@@ -4,6 +4,11 @@
     <h2>Factor Results</h2>
 
     <p>x = <%= @x %></p>
-    <p>Factors = <%= @y %></p>
+    <div>
+        <p>Factors: <%= for key <- @factors do %>
+            <%= key %>
+        <%= end %>
+        </p>
+    </div>
   </div>
 </div>

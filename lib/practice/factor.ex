@@ -2,10 +2,11 @@ defmodule Practice.Factor do
   require Logger
 
   def factor(num) when num > 0 and is_integer(num) do
-#    TODO restrict to only positive integers
-    x = factor(num, 2, [])
-    Logger.info("#{inspect x}")
-    x
+    factor(num, 2, [])
+  end
+
+  def factor(num) do
+    ["Please enter a positive number"]
   end
   
   defp factor(num, f, factors) do

@@ -6,7 +6,7 @@ defmodule Practice.Factor do
   end
 
   def factor(num) do
-    ["Please enter a positive number"]
+    ["Please enter a positive integer"]
   end
   
   defp factor(num, f, factors) do
